@@ -1,13 +1,7 @@
-# Chocolatey Packages
+# Chocolatey Packages maintained by Douglas Thrift
 
-~~~
-<!-- EDIT ME-->
-
-[![](https://ci.appveyor.com/api/projects/status/github/YOUR_GITHUB_USERNAME_HERE/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/YOUR_GITHUB_USERNAME_HERE/chocolatey-packages)
-[Update status](https://gist.github.com/YOUR_GITHUB_USERNAME_HERE/YOUR_GIST_ID)
-
-<!-- REMOVE THE squiggles "~" surrounding this (this should not be a code block) -->
-~~~
+[![](https://img.shields.io/appveyor/ci/douglaswth/chocolatey-packages/master.svg?style=flat-square)](https://ci.appveyor.com/project/douglaswth/chocolatey-packages/branch/master)
+[![](https://img.shields.io/badge/gist-update%20status-blue.svg?style=flat-square)](https://gist.github.com/douglaswth/YOUR_GIST_ID)
 
 ## Chocolatey Packages Template
 
