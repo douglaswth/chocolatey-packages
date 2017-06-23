@@ -1,6 +1,6 @@
 ## Automatic Folder
 
-This is where you put your Chocolatey packages that are automatically packaged up by either [AU](https://chocolatey.org/packages/au) or [Ketarin](https://chocolatey.org/packages/ketarin)/[ChocolateyPackageUpdater](https://chocolatey.org/packages/chocolateypackageupdater).
+This is where you put your Chocolatey packages that are automatically packaged up by [AU](https://chocolatey.org/packages/au).
 
 ### Automatic Updater (AU)
 
