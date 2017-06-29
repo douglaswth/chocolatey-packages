@@ -5,14 +5,14 @@
     <version>6.4.1</version>
     <packageSourceUrl>https://github.com/douglaswth/chocolatey-packages/tree/master/automatic/rsc</packageSourceUrl>
     <owners>Douglas Thrift</owners>
-    <title>rsc</title>
+    <title>rsc - RightScale API Client</title>
     <authors>RightScale</authors>
     <projectUrl>https://github.com/rightscale/rsc</projectUrl>
     <licenseUrl>https://github.com/rightscale/rsc/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/rightscale/rsc</projectSourceUrl>
     <bugTrackerUrl>https://github.com/rightscale/rsc/issues</bugTrackerUrl>
-    <tags>rsc admin rightscale API rest cli go golang</tags>
+    <tags>rsc rightscale API rest cli go golang</tags>
     <summary>Generic RightScale API client Go package and command line tool</summary>
     <description>
 # rsc - A generic RightScale API client
