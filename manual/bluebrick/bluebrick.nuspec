@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>bluebrick</id>
+    <version>1.8.1</version>
+    <packageSourceUrl>https://github.com/douglaswth/chocolatey-packages/tree/master/manual/bluebrick</packageSourceUrl>
+    <owners>Douglas Thrift</owners>
+    <title>BlueBrick</title>
+    <authors>Alban Nanty</authors>
+    <projectUrl>https://bluebrick.lswproject.com/</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/douglaswth/chocolatey-packages/master/icons/bluebrick.png</iconUrl>
+    <copyright>2010 Alban Nanty</copyright>
+    <licenseUrl>https://www.gnu.org/licenses/gpl.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://bitbucket.org/banban/bluebrick</projectSourceUrl>
+    <bugTrackerUrl>https://bitbucket.org/banban/bluebrick/issues?status=new&amp;status=open</bugTrackerUrl>
+    <tags>bluebrick lego layout</tags>
+    <summary>LEGO® Layout Editor</summary>
+    <description>
+BlueBrick is designed specially for the AFOLs who want to prepare the layouts of their LEGO® exhibitions. BlueBrick is compatible with [LDRAW](http://www.ldraw.org/) and ["Train Depot Track Designer"](http://www.ngltc.org/Train_Depot/td.htm), and is designed with an easily expandable parts database. Its layers feature allows you to better organize your map, and some special layers make annotations and area assignments possible.
+    </description>
+    <releaseNotes>
+See the Change log section of the [Download](https://bluebrick.lswproject.com/download.html) page.
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
