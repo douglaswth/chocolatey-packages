@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>right_st</id>
+    <version>1.6.1</version>
+    <packageSourceUrl>https://github.com/douglaswth/chocolatey-packages/tree/master/automatic/right_st</packageSourceUrl>
+    <owners>Douglas Thrift</owners>
+    <title>right_st - RightScale ServerTemplate and RightScript tool</title>
+    <authors>RightScale</authors>
+    <projectUrl>https://github.com/rightscale/right_st</projectUrl>
+    <licenseUrl>https://github.com/rightscale/right_st/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/rightscale/right_st</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/rightscale/right_st/issues</bugTrackerUrl>
+    <tags>right_st rightscale API rest cli go golang</tags>
+    <summary>RightScale ServerTemplate and RightScript tool</summary>
+    <description>
+`right_st` is a tool for managing RightScale ServerTemplate and RightScripts. The tool is able to download, upload, and show ServerTemplate and RightScripts using RightScale's API. This tool can easily be hooked into Travis CI or other build systems to manage these design objects if stored in Github. See below for usage examples.
+
+# Configuration
+
+Right ST interfaces with the [RightScale API](http://reference.rightscale.com/api1.5). Credentials for the API can be provided in two ways:
+
+1. YAML-based configuration file -  Run `right_st config account &lt;name&gt;`, where name is a nickname for the account, to interactively write the configuration file into `$HOME/.right_st.yml` for the first time. You will be prompted for the following fields:
+    * Account ID - Numeric account number, such as `60073`
+    * API endpoint host - Hostname, typically `my.rightscale.com`
+    * Refresh Token - Your personal OAuth token available from **Settings &gt; Account Settings &gt; API Credentials** in the RightScale Cloud Management dashboard
+2. Environment variables - These are meant to be used by build systems such as Travis CI. The following vars must be set: `RIGHT_ST_LOGIN_ACCOUNT_ID`, `RIGHT_ST_LOGIN_ACCOUNT_HOST`, `RIGHT_ST_LOGIN_ACCOUNT_REFRESH_TOKEN`. These variables are equivalent to the ones described in the YAML section above.
+    </description>
+    <releaseNotes>See the [ChangeLog](https://github.com/rightscale/right_st/blob/master/ChangeLog.md).</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
