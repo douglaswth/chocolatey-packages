@@ -4,5 +4,7 @@
 [![](https://img.shields.io/badge/gist-update%20status-blue.svg?style=flat-square)](https://gist.github.com/douglaswth/d98014ed4fcaa5cc65bb902f21ce366a)
 [![](https://img.shields.io/badge/chocolatey-douglaswth-884b2e.svg?style=flat-square)](https://chocolatey.org/profiles/douglaswth)
 
+* [BlueBrick](manual/bluebrick)<br>
+  [![Chocolatey](https://img.shields.io/chocolatey/v/bluebrick.svg?style=flat-square)](https://chocolatey.org/packages/bluebrick)
 * [rsc - RightScale API Client](automatic/rsc)<br>
   [![Chocolatey](https://img.shields.io/chocolatey/v/rsc.svg?style=flat-square)](https://chocolatey.org/packages/rsc)
