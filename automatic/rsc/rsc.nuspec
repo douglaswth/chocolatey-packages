@@ -8,6 +8,7 @@
     <title>rsc - RightScale API Client</title>
     <authors>RightScale</authors>
     <projectUrl>https://github.com/rightscale/rsc</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/douglaswth/chocolatey-packages/master/icons/rsc.png</iconUrl>
     <licenseUrl>https://github.com/rightscale/rsc/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/rightscale/rsc</projectSourceUrl>
