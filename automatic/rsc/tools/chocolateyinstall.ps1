@@ -6,8 +6,8 @@ $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName    = $packageName
   unzipLocation  = $toolsDir
-  url64bit       = 'https://binaries.rightscale.com/rsbin/rsc/v6.10.1/rsc-windows-amd64.zip'
-  checksum64     = '0b6736ab41ad98bb4769996b04b69c1c58c8b595487bb01c560a59aeb1c94e09'
+  url64bit       = 'https://binaries.rightscale.com/rsbin/rsc/v6.11.0/rsc-windows-amd64.zip'
+  checksum64     = '6debdba725604c2288d55104511c43d3e6afaf4b049d38b93962d55bb0b54f4d'
   checksumType64 = 'sha256'
 }
 
