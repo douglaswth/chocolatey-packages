@@ -5,6 +5,7 @@
     <id>aws-iam-authenticator</id>
     <version>0.4.0</version>
     <packageSourceUrl>https://github.com/douglaswth/chocolatey-packages/tree/master/automatic/aws-iam-authenticator</packageSourceUrl>
+    <owners>Douglas Thrift</owners>
     <title>AWS IAM Authenticator for Kubernetes</title>
     <authors>Heptio,Amazon EKS OSS Engineers</authors>
     <projectUrl>https://github.com/kubernetes-sigs/aws-iam-authenticator</projectUrl>
