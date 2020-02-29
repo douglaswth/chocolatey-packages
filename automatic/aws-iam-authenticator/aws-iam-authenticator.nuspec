@@ -9,7 +9,7 @@
     <title>AWS IAM Authenticator for Kubernetes</title>
     <authors>Heptio,Amazon EKS OSS Engineers</authors>
     <projectUrl>https://github.com/kubernetes-sigs/aws-iam-authenticator</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/douglaswth/chocolatey-packages/master/icons/aws-iam-authenticator.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/douglaswth/chocolatey-packages/master/icons/aws-iam-authenticator.png</iconUrl>
     <copyright>2017 the contributors</copyright>
     <licenseUrl>https://github.com/kubernetes-sigs/aws-iam-authenticator/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

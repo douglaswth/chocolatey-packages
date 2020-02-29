@@ -9,7 +9,7 @@
     <title>fpt - Flexera Policy Tool</title>
     <authors>Flexera</authors>
     <projectUrl>https://github.com/rightscale/policy_sdk/tree/master/cmd/fpt</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/douglaswth/chocolatey-packages/master/icons/fpt.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/douglaswth/chocolatey-packages/master/icons/fpt.png</iconUrl>
     <licenseUrl>https://github.com/rightscale/policy_sdk/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/rightscale/policy_sdk</projectSourceUrl>
