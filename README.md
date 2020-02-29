@@ -8,6 +8,8 @@
   [![Chocolatey](https://img.shields.io/chocolatey/v/aws-iam-authenticator.svg?style=flat-square)](https://chocolatey.org/packages/aws-iam-authenticator)
 * [BlueBrick](automatic/bluebrick)<br>
   [![Chocolatey](https://img.shields.io/chocolatey/v/bluebrick.svg?style=flat-square)](https://chocolatey.org/packages/bluebrick)
+* [fpt - Flexera Policy Tool](automatic/fpt)<br>
+  [![Chocolatey](https://img.shields.io/chocolatey/v/fpt.svg?style=flat-square)](https://chocolatey.org/packages/fpt)
 * [right_st - RightScale ServerTemplate and RightScript tool](automatic/right-st)<br>
   [![Chocolatey](https://img.shields.io/chocolatey/v/right-st.svg?style=flat-square)](https://chocolatey.org/packages/right-st)
 * [rsc - RightScale API Client](automatic/rsc)<br>
