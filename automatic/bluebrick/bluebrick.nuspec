@@ -18,6 +18,10 @@
     <summary>LEGO® Layout Editor</summary>
     <description>
 BlueBrick is designed specially for the AFOLs who want to prepare the layouts of their LEGO® exhibitions. BlueBrick is compatible with [LDRAW](http://www.ldraw.org/) and ["Train Depot Track Designer"](http://www.ngltc.org/Train_Depot/td.htm), and is designed with an easily expandable parts database. Its layers feature allows you to better organize your map, and some special layers make annotations and area assignments possible.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
     </description>
     <releaseNotes>
 See the Change log section of the [Download](https://bluebrick.lswproject.com/download.html) page.

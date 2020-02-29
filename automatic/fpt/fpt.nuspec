@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>fpt</id>
+    <version>1.0.8</version>
+    <packageSourceUrl>https://github.com/douglaswth/chocolatey-packages/tree/master/automatic/fpt</packageSourceUrl>
+    <owners>Douglas Thrift</owners>
+    <title>fpt - Flexera Policy Tool</title>
+    <authors>Flexera</authors>
+    <projectUrl>https://github.com/rightscale/policy_sdk/tree/master/cmd/fpt</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/douglaswth/chocolatey-packages/master/icons/fpt.png</iconUrl>
+    <licenseUrl>https://github.com/rightscale/policy_sdk/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/rightscale/policy_sdk</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/rightscale/policy_sdk/issues</bugTrackerUrl>
+    <tags>fpt flexera rightscale API rest cli go golang</tags>
+    <summary>Flexera Policy Tool</summary>
+    <description>
+# fpt - Flexera Policy Tool
+
+`fpt` is a command line tool to aid in the development and testing of [RightScale Policies](https://docs.rightscale.com/policies/). The tool is able to syntax check, upload, and run Policies.
+
+### Configuration
+
+`fpt` interfaces with the [Policy API](https://reference.rightscale.com/governance-policies/). Credentials for the API can be provided in two ways:
+
+1. YAML-based configuration file -  Run `fpt config account &lt;name&gt;`, where name is a nickname for the account, to interactively write the configuration file into `$HOME/.fpt.yml` for the first time. You will be prompted for the following fields:
+    * Account ID - Numeric account number, such as `60073`
+    * API endpoint host - Hostname, typically `governance-3.rightscale.com`
+    * Refresh Token - Your personal OAuth token available from **Settings &gt; Account Settings &gt; API Credentials** in the RightScale Cloud Management dashboard
+2. Environment variables - These are meant to be used by build systems such as Travis CI. The following vars must be set: `FPT_LOGIN_ACCOUNT_ID`, `FPT_LOGIN_ACCOUNT_HOST`, `FPT_LOGIN_ACCOUNT_REFRESH_TOKEN`. These variables are equivalent to the ones described in the YAML section above.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
+</description>
+    <releaseNotes>See the [ChangeLog](https://github.com/rightscale/policy_sdk/blob/master/cmd/fpt/ChangeLog.md).</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

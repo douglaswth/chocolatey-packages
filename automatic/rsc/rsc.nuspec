@@ -6,14 +6,14 @@
     <packageSourceUrl>https://github.com/douglaswth/chocolatey-packages/tree/master/automatic/rsc</packageSourceUrl>
     <owners>Douglas Thrift</owners>
     <title>rsc - RightScale API Client</title>
-    <authors>RightScale</authors>
+    <authors>Flexera</authors>
     <projectUrl>https://github.com/rightscale/rsc</projectUrl>
     <iconUrl>http://cdn.rawgit.com/douglaswth/chocolatey-packages/master/icons/rsc.png</iconUrl>
     <licenseUrl>https://github.com/rightscale/rsc/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/rightscale/rsc</projectSourceUrl>
     <bugTrackerUrl>https://github.com/rightscale/rsc/issues</bugTrackerUrl>
-    <tags>rsc rightscale API rest cli go golang</tags>
+    <tags>rsc flexera rightscale API rest cli go golang</tags>
     <summary>Generic RightScale API client Go package and command line tool</summary>
     <description>
 # rsc - A generic RightScale API client
@@ -35,6 +35,10 @@ The command line tool uses subcommands to interact with each API. Use `rsc cm15`
 to the RightScale Cloud Management API 1.5, `rsc cm16` to send requests to the RightScale Cloud
 Management API 1.6, `rsc ss` to send requests to the RightScale Self-Service API 1.0 and `rsc rl10`
 to send requests to RightLink10.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
     </description>
     <releaseNotes>See the [CHANGELOG](https://github.com/rightscale/rsc/blob/master/CHANGELOG.md).</releaseNotes>
   </metadata>

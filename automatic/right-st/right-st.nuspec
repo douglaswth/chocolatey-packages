@@ -7,14 +7,14 @@
     <packageSourceUrl>https://github.com/douglaswth/chocolatey-packages/tree/master/automatic/right-st</packageSourceUrl>
     <owners>Douglas Thrift</owners>
     <title>right_st - RightScale ServerTemplate and RightScript tool</title>
-    <authors>RightScale</authors>
+    <authors>Flexera</authors>
     <projectUrl>https://github.com/rightscale/right_st</projectUrl>
     <iconUrl>http://cdn.rawgit.com/douglaswth/chocolatey-packages/master/icons/right-st.png</iconUrl>
     <licenseUrl>https://github.com/rightscale/right_st/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/rightscale/right_st</projectSourceUrl>
     <bugTrackerUrl>https://github.com/rightscale/right_st/issues</bugTrackerUrl>
-    <tags>right_st rightscale API rest cli go golang</tags>
+    <tags>right_st flexera rightscale API rest cli go golang</tags>
     <summary>RightScale ServerTemplate and RightScript tool</summary>
     <description>
 `right_st` is a tool for managing RightScale ServerTemplate and RightScripts. The tool is able to download, upload, and show ServerTemplate and RightScripts using RightScale's API. This tool can easily be hooked into Travis CI or other build systems to manage these design objects if stored in Github. See below for usage examples.
@@ -28,6 +28,10 @@ Right ST interfaces with the [RightScale API](http://reference.rightscale.com/ap
     * API endpoint host - Hostname, typically `my.rightscale.com`
     * Refresh Token - Your personal OAuth token available from **Settings &gt; Account Settings &gt; API Credentials** in the RightScale Cloud Management dashboard
 2. Environment variables - These are meant to be used by build systems such as Travis CI. The following vars must be set: `RIGHT_ST_LOGIN_ACCOUNT_ID`, `RIGHT_ST_LOGIN_ACCOUNT_HOST`, `RIGHT_ST_LOGIN_ACCOUNT_REFRESH_TOKEN`. These variables are equivalent to the ones described in the YAML section above.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
     </description>
     <releaseNotes>See the [ChangeLog](https://github.com/rightscale/right_st/blob/master/ChangeLog.md).</releaseNotes>
   </metadata>
