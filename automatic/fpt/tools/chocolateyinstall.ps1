@@ -5,8 +5,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $toolsDir
-  url64bit       = 'https://binaries.rightscale.com/rsbin/fpt/v1.1.1/fpt-windows-amd64.zip'
-  checksum64     = '5b9c529aabe174fb2f974dfe359ca4cbae679046550f4543ac47fd3d674e53d5'
+  url64bit       = 'https://binaries.rightscale.com/rsbin/fpt/v1.1.2/fpt-windows-amd64.zip'
+  checksum64     = '9d1ed9585cea5732e76872f8c5f1591b8b39fb9fb1136f92ecee4c93d42d8290'
   checksumType64 = 'sha256'
 }
 
