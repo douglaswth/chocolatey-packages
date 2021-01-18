@@ -5,7 +5,7 @@ $latest_release = 'https://github.com/rightscale/policy_sdk/releases'
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $latest_release -UseBasicParsing
   $regex = '^.+/v(\d+\.\d+\.\d+)/fpt-windows-amd64\.zip$'
-  $url64 = $download_page.Links | ? href -Match $regex | select -First 1 -ExpandProperty href
+  $url64 = $download_page.Links | Where-Object href -Match $regex | Select-Object -First 1 -ExpandProperty href
   $version = $url64 -replace $regex, '$1'
   return @{ Version = $version; URL64 = $url64 }
 }

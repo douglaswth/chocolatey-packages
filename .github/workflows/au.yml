@@ -1,0 +1,76 @@
+name: Auto Update
+
+on:
+  workflow_dispatch: # Enable manual trigger
+    inputs:
+      forced_packages:
+        description: The list of packages to forcibly update (like "pkg1:ver1 pkg2")
+        required: false
+  schedule:
+    - cron: 5 */8 * * *
+
+jobs:
+  auto_update:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: powershell
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 100
+      - name: Check a build environment
+        run: |
+          Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version
+          $PSVersionTable
+          git --version
+          choco --version
+      - name: Initialize Git config
+        run: |
+          git config --global user.email "chocolatey@realdimensions.net"
+          git config --global user.name "Chocolatey"
+          git config --global core.safecrlf false
+      - name: Install AU
+        run: |
+          git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
+          . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
+      - name: Check update for packages
+        run: |
+          $ErrorActionPreference = 'Continue'
+          ./update_all.ps1 -ForcedPackages '${{ github.event.inputs.forced_packages }}'
+          7z a au_temp.zip $Env:TEMP\chocolatey\au\*
+        env:
+          # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
+          #au_version:
+          au_push: true
+
+          # Github token to commit pushed packages to repository
+          github_user_repo: ${{ github.repository }}
+          github_api_key: ${{ secrets.GITHUB_TOKEN }}
+
+          # Mail credentials - for error notifications
+          mail_to: ${{ secrets.MAIL_TO }}
+          mail_from: ${{ secrets.MAIL_FROM }}
+          mail_user: ${{ secrets.MAIL_USER }}
+          mail_pass: ${{ secrets.MAIL_PASS }}
+          mail_server: mail.douglasthrift.net
+          mail_port: 587
+          mail_enablessl: true
+
+          # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
+          # Optional, leave empty to create anonymous gist
+          gist_id: d98014ed4fcaa5cc65bb902f21ce366a
+
+          # Force test: gist id for test results
+          gist_id_test: b003c5505c6cc5c6a67f8de9e68c183
+
+          # Chocolatey API key - to push updated packages
+          api_key: ${{ secrets.CHOCOLATEY_API_KEY }}
+      - name: Upload update results
+        uses: actions/upload-artifact@v2
+        with:
+          name: update_results
+          path: |
+            update_info.xml
+            Update-AUPackages.md
+            au_temp.zip

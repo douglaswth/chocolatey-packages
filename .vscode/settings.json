@@ -1,0 +1,19 @@
+{
+    "cSpell.words": [
+        "bluebrick",
+        "choco",
+        "douglasthrift",
+        "douglaswth",
+        "enablessl",
+        "lsau",
+        "operatingsystem",
+        "safecrlf"
+    ],
+    "markdownlint.config": {
+        "no-inline-html": {
+            "allowed_elements": [
+                "br"
+            ]
+        }
+    }
+}

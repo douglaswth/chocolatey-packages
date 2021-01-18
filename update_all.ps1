@@ -48,7 +48,8 @@ $Options = [ordered]@{
 
     Mail = if ($Env:mail_user) {
             @{
-                To         = $Env:mail_user
+                To         = $Env:mail_to
+                From       = $Env:mail_from
                 Server     = $Env:mail_server
                 UserName   = $Env:mail_user
                 Password   = $Env:mail_pass
@@ -63,10 +64,12 @@ $Options = [ordered]@{
     ForcedPackages = $ForcedPackages -split ' '
     BeforeEach = {
         param($PackageName, $Options )
-        $p = $Options.ForcedPackages | ? { $_ -match "^${PackageName}(?:\:(.+))*$" }
+        $p = $Options.ForcedPackages | Where-Object { $_ -match "^${PackageName}(?:\:(.+))*$" }
         if (!$p) { return }
 
-        $global:au_Force   = $true
+        [Diagnostics.CodeAnalysis.SuppressMessageAttribute('UseDeclaredVarsMoreThanAssignments', '')]
+        $global:au_Force = $true
+        [Diagnostics.CodeAnalysis.SuppressMessageAttribute('UseDeclaredVarsMoreThanAssignments', '')]
         $global:au_Version = ($p -split ':')[1]
     }
 }

@@ -4,11 +4,11 @@ $branches = 'https://github.com/rightscale/rsc/branches/all'
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $branches -UseBasicParsing
-  $regex         = '^/rightscale/rsc/tree/(v\d+\.\d+\.\d+)$'
-  $tree          = $download_page.Links | ? href -Match $regex | select -First 1 -ExpandProperty href
-  $branch        = $tree -replace $regex, '$1'
-  $version       = $branch.Substring(1)
-  $url64         = "https://binaries.rightscale.com/rsbin/rsc/$branch/rsc-windows-amd64.zip"
+  $regex = '^/rightscale/rsc/tree/(v\d+\.\d+\.\d+)$'
+  $tree = $download_page.Links | Where-Object href -Match $regex | Select-Object -First 1 -ExpandProperty href
+  $branch = $tree -replace $regex, '$1'
+  $version = $branch.Substring(1)
+  $url64 = "https://binaries.rightscale.com/rsbin/rsc/$branch/rsc-windows-amd64.zip"
   return @{ Version = $version; URL64 = $url64 }
 }
 
