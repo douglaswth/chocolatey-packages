@@ -46,7 +46,7 @@ jobs:
 
           # Github token to commit pushed packages to repository
           github_user_repo: ${{ github.repository }}
-          github_api_key: ${{ secrets.GITHUB_TOKEN }}
+          github_api_key: ${{ secrets.AU_GITHUB_API_KEY }}
 
           # Mail credentials - for error notifications
           mail_to: ${{ secrets.MAIL_TO }}
