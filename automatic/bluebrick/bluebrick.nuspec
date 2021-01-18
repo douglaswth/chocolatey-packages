@@ -3,7 +3,7 @@
   <metadata>
     <id>bluebrick</id>
     <version>1.9.0</version>
-    <packageSourceUrl>https://github.com/douglaswth/chocolatey-packages/tree/master/manual/bluebrick</packageSourceUrl>
+    <packageSourceUrl>https://github.com/douglaswth/chocolatey-packages/tree/master/automatic/bluebrick</packageSourceUrl>
     <owners>Douglas Thrift</owners>
     <title>BlueBrick</title>
     <authors>Alban Nanty</authors>
@@ -12,8 +12,8 @@
     <copyright>2010 Alban Nanty</copyright>
     <licenseUrl>https://www.gnu.org/licenses/gpl.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://bitbucket.org/banban/bluebrick</projectSourceUrl>
-    <bugTrackerUrl>https://bitbucket.org/banban/bluebrick/issues?status=new&amp;status=open</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/Lswbanban/BlueBrick</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/Lswbanban/BlueBrick/issues</bugTrackerUrl>
     <tags>bluebrick lego layout</tags>
     <summary>LEGO® Layout Editor</summary>
     <description>
