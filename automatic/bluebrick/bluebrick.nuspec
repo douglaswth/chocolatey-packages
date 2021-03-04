@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>bluebrick</id>
-    <version>1.9.0</version>
+    <version>1.9.1</version>
     <packageSourceUrl>https://github.com/douglaswth/chocolatey-packages/tree/master/automatic/bluebrick</packageSourceUrl>
     <owners>Douglas Thrift</owners>
     <title>BlueBrick</title>
