@@ -23,6 +23,9 @@ BlueBrick is designed specially for the AFOLs who want to prepare the layouts of
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
     </description>
+    <dependencies>
+      <dependency id="netfx-4.8" version="4.8.0.20190930" />
+    </dependencies>
     <releaseNotes>
 See the Change log section of the [Download](https://bluebrick.lswproject.com/download.html) page.
     </releaseNotes>

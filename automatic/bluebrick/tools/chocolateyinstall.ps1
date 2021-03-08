@@ -9,7 +9,7 @@ $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $installDir
   url           = 'https://bluebrick.lswproject.com/download/BlueBrick.1.9.1.zip'
-  checksum      = 'fa45e235c6c21a3ca98b47b3c4f958c24214e124a5c9fdda3bce0622cba4ef77'
+  checksum      = '2fc69f384a1232d8e33cf3fb91cda0d2b8e876cbcdb072e5acfe4da2153b72c5'
   checksumType  = 'sha256'
 }
 
