@@ -8,12 +8,12 @@
     <owners>Douglas Thrift</owners>
     <title>fpt - Flexera Policy Tool</title>
     <authors>Flexera</authors>
-    <projectUrl>https://github.com/rightscale/policy_sdk/tree/master/cmd/fpt</projectUrl>
+    <projectUrl>https://github.com/flexera-public/policy_sdk/tree/master/cmd/fpt</projectUrl>
     <iconUrl>https://cdn.rawgit.com/douglaswth/chocolatey-packages/master/icons/fpt.png</iconUrl>
-    <licenseUrl>https://github.com/rightscale/policy_sdk/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/flexera-public/policy_sdk/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/rightscale/policy_sdk</projectSourceUrl>
-    <bugTrackerUrl>https://github.com/rightscale/policy_sdk/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/flexera-public/policy_sdk</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/flexera-public/policy_sdk/issues</bugTrackerUrl>
     <tags>fpt flexera rightscale API rest cli go golang</tags>
     <summary>Flexera Policy Tool</summary>
     <description>
@@ -35,7 +35,7 @@
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 </description>
-    <releaseNotes>See the [ChangeLog](https://github.com/rightscale/policy_sdk/blob/master/cmd/fpt/ChangeLog.md).</releaseNotes>
+    <releaseNotes>See the [ChangeLog](https://github.com/flexera-public/policy_sdk/blob/master/cmd/fpt/ChangeLog.md).</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

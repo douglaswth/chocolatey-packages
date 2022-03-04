@@ -7,12 +7,12 @@
     <owners>Douglas Thrift</owners>
     <title>rsc - RightScale API Client</title>
     <authors>Flexera</authors>
-    <projectUrl>https://github.com/rightscale/rsc</projectUrl>
+    <projectUrl>https://github.com/flexera-public/rsc</projectUrl>
     <iconUrl>https://cdn.rawgit.com/douglaswth/chocolatey-packages/master/icons/rsc.png</iconUrl>
-    <licenseUrl>https://github.com/rightscale/rsc/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/flexera-public/rsc/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/rightscale/rsc</projectSourceUrl>
-    <bugTrackerUrl>https://github.com/rightscale/rsc/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/flexera-public/rsc</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/flexera-public/rsc/issues</bugTrackerUrl>
     <tags>rsc flexera rightscale API rest cli go golang</tags>
     <summary>Generic RightScale API client Go package and command line tool</summary>
     <description>
@@ -40,7 +40,7 @@ to send requests to RightLink10.
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
     </description>
-    <releaseNotes>See the [CHANGELOG](https://github.com/rightscale/rsc/blob/master/CHANGELOG.md).</releaseNotes>
+    <releaseNotes>See the [CHANGELOG](https://github.com/flexera-public/rsc/blob/master/CHANGELOG.md).</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

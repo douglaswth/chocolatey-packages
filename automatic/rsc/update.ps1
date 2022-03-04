@@ -1,10 +1,10 @@
 ﻿Import-Module au
 
-$branches = 'https://github.com/rightscale/rsc/branches/all'
+$branches = 'https://github.com/flexera-public/rsc/branches/all'
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $branches -UseBasicParsing
-  $regex = '^/rightscale/rsc/tree/(v\d+\.\d+\.\d+)$'
+  $regex = '^/flexera-public/rsc/tree/(v\d+\.\d+\.\d+)$'
   $tree = $download_page.Links | Where-Object href -Match $regex | Select-Object -First 1 -ExpandProperty href
   $branch = $tree -replace $regex, '$1'
   $version = $branch.Substring(1)

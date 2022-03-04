@@ -8,12 +8,12 @@
     <owners>Douglas Thrift</owners>
     <title>right_st - RightScale ServerTemplate and RightScript tool</title>
     <authors>Flexera</authors>
-    <projectUrl>https://github.com/rightscale/right_st</projectUrl>
+    <projectUrl>https://github.com/flexera-public/right_st</projectUrl>
     <iconUrl>https://cdn.rawgit.com/douglaswth/chocolatey-packages/master/icons/right-st.png</iconUrl>
-    <licenseUrl>https://github.com/rightscale/right_st/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/flexera-public/right_st/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/rightscale/right_st</projectSourceUrl>
-    <bugTrackerUrl>https://github.com/rightscale/right_st/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/flexera-public/right_st</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/flexera-public/right_st/issues</bugTrackerUrl>
     <tags>right_st flexera rightscale API rest cli go golang</tags>
     <summary>RightScale ServerTemplate and RightScript tool</summary>
     <description>
@@ -33,7 +33,7 @@ Right ST interfaces with the [RightScale API](http://reference.rightscale.com/ap
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
     </description>
-    <releaseNotes>See the [ChangeLog](https://github.com/rightscale/right_st/blob/master/ChangeLog.md).</releaseNotes>
+    <releaseNotes>See the [ChangeLog](https://github.com/flexera-public/right_st/blob/master/ChangeLog.md).</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

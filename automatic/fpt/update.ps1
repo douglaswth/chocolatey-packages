@@ -1,6 +1,6 @@
 ﻿Import-Module au
 
-$latest_release = 'https://github.com/rightscale/policy_sdk/releases'
+$latest_release = 'https://github.com/flexera-public/policy_sdk/releases'
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $latest_release -UseBasicParsing
