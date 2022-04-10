@@ -67,7 +67,7 @@ jobs:
           # Chocolatey API key - to push updated packages
           api_key: ${{ secrets.CHOCOLATEY_API_KEY }}
       - name: Upload update results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: update_results
           path: |
