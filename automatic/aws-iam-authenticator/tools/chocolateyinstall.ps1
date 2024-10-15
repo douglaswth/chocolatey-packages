@@ -5,8 +5,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileFullPath   = "$toolsDir\aws-iam-authenticator.exe"
-  url64bit       = 'https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/download/v0.5.9/aws-iam-authenticator_0.5.9_windows_amd64.exe'
-  checksum64     = 'b7345e06c5f1d31b9459a38baffe0744343711cb5042cb31ff1e072d870c42f9'
+  url64bit       = 'https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/download/v0.6.27/aws-iam-authenticator_0.6.27_windows_amd64.exe'
+  checksum64     = '6ce12a69d0270d3ec97fcfc21caccd671b633ff51a31f41b0340dbe1c48bcba7'
   checksumType64 = 'sha256'
 }
 
