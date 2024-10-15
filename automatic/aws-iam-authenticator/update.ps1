@@ -5,7 +5,7 @@ $repo = 'https://github.com/kubernetes-sigs/aws-iam-authenticator'
 function global:au_GetLatest {
   $release = Get-LatestReleaseOnGitHub -URL $repo -AccessToken $env:github_api_key
   $version = $release.Tag.trim('v.')
-  $url64 = $release.Assets | Where-Object { $_.FileName -like '*_windows_amd64.exe' } | Select-Object -First 1 -ExpandProperty URL
+  $url64 = $release.Assets | Where-Object { $_.FileName -like '*_windows_amd64.exe' } | Select-Object -First 1 -ExpandProperty DownloadURL
   return @{ Version = $version; URL64 = $url64 }
 }
 
