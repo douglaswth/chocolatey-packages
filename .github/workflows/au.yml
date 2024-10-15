@@ -34,6 +34,8 @@ jobs:
         run: |
           git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
           . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
+      - name: Install Latest Release on GitHub Helper
+        run: choco install largh --yes
       - name: Check update for packages
         run: |
           $ErrorActionPreference = 'Continue'

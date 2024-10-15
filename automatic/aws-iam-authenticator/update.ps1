@@ -1,12 +1,11 @@
 ﻿Import-Module au
 
-$latest_release = 'https://github.com/kubernetes-sigs/aws-iam-authenticator/releases/latest'
+$repo = 'https://github.com/kubernetes-sigs/aws-iam-authenticator'
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $latest_release -UseBasicParsing
-  $regex = '^.+/aws-iam-authenticator_(\d+\.\d+\.\d+)_windows_amd64\.exe$'
-  $url64 = "https://github.com$($download_page.Links | Where-Object href -Match $regex | Select-Object -First 1 -ExpandProperty href)"
-  $version = $url64 -replace $regex, '$1'
+  $release = Get-LatestReleaseOnGitHub -URL $repo -AccessToken $env:github_api_key
+  $version = $release.Tag.trim('v.')
+  $url64 = $release.Assets | Where-Object { $_.FileName -like '*_windows_amd64.exe' } | Select-Object -First 1 -ExpandProperty URL
   return @{ Version = $version; URL64 = $url64 }
 }
 
