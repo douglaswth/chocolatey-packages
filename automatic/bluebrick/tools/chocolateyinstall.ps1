@@ -8,8 +8,8 @@ $blueBrickLnk = Join-Path ([System.Environment]::GetFolderPath('CommonPrograms')
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $installDir
-  url           = 'https://bluebrick.lswproject.com/download/BlueBrick.1.9.1.zip'
-  checksum      = '2fc69f384a1232d8e33cf3fb91cda0d2b8e876cbcdb072e5acfe4da2153b72c5'
+  url           = 'https://bluebrick.lswproject.com/download/BlueBrick.1.9.2.zip'
+  checksum      = '4e0682a9083b4026cbf2a03e71dc9e8b3865cc72e3beac65c299197c7e492847'
   checksumType  = 'sha256'
 }
 
