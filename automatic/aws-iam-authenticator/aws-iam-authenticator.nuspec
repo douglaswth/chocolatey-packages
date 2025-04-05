@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>aws-iam-authenticator</id>
-    <version>0.6.30</version>
+    <version>0.6.31</version>
     <packageSourceUrl>https://github.com/douglaswth/chocolatey-packages/tree/master/automatic/aws-iam-authenticator</packageSourceUrl>
     <owners>Douglas Thrift</owners>
     <title>AWS IAM Authenticator for Kubernetes</title>
