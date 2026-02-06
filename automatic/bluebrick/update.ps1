@@ -3,6 +3,7 @@
 $latest_release = 'https://bluebrick.lswproject.com/download.html'
 
 function global:au_GetLatest {
+    $ProgressPreference = 'SilentlyContinue'
     $download_page = Invoke-WebRequest -Uri $latest_release
     $regex = '^.+/BlueBrick\.(\d+\.\d+\.\d+)\.zip$'
     $url = $download_page.Links | Where-Object href -Match $regex | Select-Object -First 1 -ExpandProperty href
