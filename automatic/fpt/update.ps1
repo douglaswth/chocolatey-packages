@@ -1,13 +1,13 @@
 ﻿Import-Module au
 
-$latest_release = 'https://github.com/flexera-public/policy_sdk/releases'
+$latest_release = 'https://api.github.com/repos/flexera-public/policy_sdk/releases/latest'
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $latest_release -UseBasicParsing
-  $regex = '^.+/v(\d+\.\d+\.\d+)/fpt-windows-amd64\.zip$'
-  $url64 = $download_page.Links | Where-Object href -Match $regex | Select-Object -First 1 -ExpandProperty href
-  $version = $url64 -replace $regex, '$1'
-  return @{ Version = $version; URL64 = $url64 }
+  $release = Invoke-RestMethod -Uri $latest_release -UseBasicParsing
+  $regex = '^fpt-windows-amd64-v(\d+\.\d+\.\d+)\.zip$'
+  $asset = $release.assets | Where-Object name -Match $regex | Select-Object -First 1
+  $version = $asset.name -replace $regex, '$1'
+  return @{ Version = $version; URL64 = $asset.browser_download_url }
 }
 
 function global:au_SearchReplace {
